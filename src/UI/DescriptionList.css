@@ -1,0 +1,13 @@
+li{
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.125rem;
+}
+.headerList{
+    color: var(--lightBlue2-color);
+    opacity: .7;
+}
+.list{
+    color: var(--lightGrey2-color);
+}

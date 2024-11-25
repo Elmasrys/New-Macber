@@ -1,0 +1,97 @@
+.special{
+    border: 0;
+    border-radius: 0.625rem;
+    position: relative;
+}
+.blue-overlay{
+    background-color: var(--lightBlue-color);
+    border-radius: 0.625rem;
+    position: absolute;
+    bottom: -15%;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    border-top: 10px solid var(--lightBlue3-color);
+}
+.white-overlay{
+    text-align: center;
+    padding: 2rem 0;   
+}
+.team-member {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 89px;
+    border: 0;
+    width: 225px;
+    margin: auto;
+    /* border-radius: 0.625rem; */
+}
+.team-member-info {
+    padding: 1rem;
+    position: absolute;
+    z-index: 10;
+    margin-top: -89px;
+    top: 100%;
+    /* width: 87%; */
+    display: inline-block;
+    /* left: 17px; */
+    background-color: var(--lightBlue-color);
+    right: 0;
+    bottom: 0;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    width: 100%;
+    /* backface-visibility: hidden; */
+}
+.team_card{
+    padding: 1rem;
+        position: absolute;
+        z-index: 10;
+        margin-top: -89px;
+        top: 100%;
+        left: 0;
+        background-color: var(--lightBlue-color);
+        right: 0;
+        bottom: 0;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        backface-visibility: hidden;
+}
+.team-member-more {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all .4s ease 0.1s;
+    -webkit-transition: all .4s ease 0.1s;
+    -moz-transition: all .4s ease 0.1s;
+}
+.team-member:hover .team-member-info{
+	top:80px;
+}
+.team-member:hover .team-member-more{
+	opacity:1;
+	-moz-opacity:1;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+}
+.social_link:hover{
+    transform: scale(1.1);
+}
+.social_link:hover svg path {
+    fill: var(--secBlue-color);
+}
+.width-fit-content{
+    width: fit-content;
+}
+.desc_sm{
+    font-size: 12px;
+    padding: 10px 0;
+}

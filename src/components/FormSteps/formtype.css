@@ -1,0 +1,304 @@
+.container-form{
+    width: 80%;
+    margin: auto;
+}
+.bg_form_type {
+    background-image: url(../../../src/assets/New/bg_form.jpg);
+    height: 664px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg_form_type_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006b;
+    top: 0;
+    left: 0;
+}
+.form-type {
+    display: block;
+}
+.form-type.none {
+    display: none;
+}
+.formType {
+    display: none;
+}
+.formType.blo {
+    display: block;
+}
+.flex_step {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding:  70px 0;
+}
+.btn_step {
+    width: 20%;
+    padding: 1rem 2rem;
+    background-color: var(--lightBlue3-color);
+    color: var(--white-color);
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    margin-left: 86px;
+        
+}
+.btn_step_back{
+    padding: 1rem 4rem;
+    margin-left: 90px;
+    font-size: 14px;
+     /* z-index: 3 !important; */
+
+}
+
+.btn-next-step{
+    color:var(--lightBlu4-color);
+    background-color: #0E4FE3;
+     /* z-index: 3 !important; */
+
+}
+.btn-next-step:hover {
+background-color: var(--lightBlu4-color) !important;
+color: #0E4FE3 !important;
+}
+
+.btn_step_back.estimate{
+    padding: 1rem 2rem;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+.btn_step:hover{
+    background-color: var(--white-color);
+    color: var(--bs-blue);
+}
+.check_border {
+    align-items: center;
+    align-items: center;
+    border: 1px solid var(--lightBlu4-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 74px;
+}
+.check_border label{
+    width: -webkit-fill-available;
+    text-align: start;
+}
+.custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    background-color: #f0f0f000 ;
+    border-radius: 4px !important;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 0px !important;
+}
+.custom-checkbox:checked {
+    background-color: var(--lightBlue3-color);
+    background-image: url('../../assets/icons/checkboxmark.svg');
+    background-size: 80%;
+    box-shadow: none !important;
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.input-step {
+    background-color: #ffffff05;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff !important;
+    padding: 20px;
+    width: 75%;
+    color: #fff;
+}
+.input-keys,
+.input-step::placeholder {
+    font-size: 2rem;
+    color: #ffffff7c;
+    font-weight: 500;
+
+}
+.ReactFlagsSelect-module_selectBtn__19wW7:after {
+    border-top: 5px solid #f9f9fc !important;
+}
+.react-international-phone-country-selector-button__dropdown-arrow {
+    border-top: var(--react-international-phone-country-selector-arrow-size, 4px) solid #ffffff !important;
+}
+
+.react-international-phone-country-selector-dropdown{
+    width: 135px !important;
+    background-color: #ffffff !important;
+    height: 130px !important;
+
+    /* z-index: 999 !important; */
+    /* position: relative !important; */
+}
+.react-international-phone-input{
+    display: none !important;
+}
+.line-mail{
+    position: absolute;
+    bottom: 55px;
+    left: 80px;
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+}
+.input-keys{
+    border: none;
+    padding: 17px 0;
+    background-color: #f9f9fc00;
+    color: #fff !important;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+#form{
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    top: -50px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.select-down .Select ul{
+ background-color: #ffffff;
+ height: 130px !important;
+  /* z-index: 1000 !important;  */
+     /* z-index: 999 !important; */
+    /* position: relative !important; */
+}
+.select-down{margin-left: 70px;
+    display: grid !important;
+    grid-template-columns: 1fr;
+}
+.select-down  .Select button{
+    padding: 13px   !important;
+    color: #fff !important;
+    background-color: #ffffff29 !important;
+}
+.react-international-phone-input-container {
+    display: flex;
+    align-items: center;
+}
+.react-international-phone-input-container .react-international-phone-country-selector-button {
+    padding: 30px !important;
+    background-color: #ffffff29 !important;
+    border: none !important;
+    color: #fff !important;
+    width: 75px !important;
+    margin-bottom: 7px !important;
+}
+.react-international-phone-input-container .react-international-phone-input {
+    border: none !important;
+    background-color: #ffffff26 !important;
+    padding: 30px 7px !important;
+    color:  #fff !important;
+}
+.select-down-num{
+    margin-left: 65px ;
+}
+
+.btns-typeForm{
+    display: flex;
+    z-index: 1 !important;
+    position: relative !important;
+    margin-top: 10px !important;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@media screen and (max-width:992px){
+    .title-white-sm{
+        font-size: 1.4rem;
+    }
+   .btns-typeForm {
+    margin: auto;
+   }
+   .btn_step_back {
+       margin-left: 20px;
+           }
+                   .btn-next-step,
+        .btn_step_back {
+            padding: 1rem 2.5rem !important;
+            margin:  10px;
+        }
+                 .btn_step_back.estimate{
+            padding:1rem !important;
+                 }
+             
+}
+
+
+@media screen and (max-width:767px) {
+.container-form {
+    width: 100%;
+}
+.input-step::placeholder {
+    font-size: 1rem;
+}
+.flex_step{
+    width: 100%;
+}
+.check_border{
+    margin-left: 0;
+}
+
+.input-step {
+    width: 100%;
+}
+.select-down-num,
+.select-down{
+    margin-left: 0;
+
+}
+.line-mail{
+    left: 10px;
+    width: 95%;
+}
+
+.input-keys {
+    width: 100%;
+}
+.step{
+    margin-top: 35px;
+}
+}
+@media screen and (min-width:767px)  and (max-width:991px) {
+.container-form {
+    width: 100%;
+}
+.input-step::placeholder {
+    font-size: 1.3rem;
+}
+.flex_step{
+    width: 100%;
+}
+.check_border{
+    margin-left: 0;
+}
+}
+@media screen and (min-width:991px) and (max-width:1200px) {
+.check_border {
+    margin-left: 40px;
+}
+.btn_step_back,
+.btn_step {
+    margin-left: 55px;
+}
+}

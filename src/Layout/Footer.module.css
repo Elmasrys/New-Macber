@@ -1,0 +1,36 @@
+footer{
+    background-color: var(--New_blue);
+}
+.nav_footer{
+    color: var(--white-color);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+.nav_footer:hover{
+    color: var(--white-color);
+}
+.social_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social_links a{
+    transition: all ease .5s;
+}
+.social_links a:hover{
+    transform: scale(1.1);
+}
+.btn_contact{
+    color: #fff;
+    background-color: #ffffff17;
+    padding: 1rem 4rem;
+    border: 1px solid #fff;
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 30px 0;
+}

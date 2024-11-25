@@ -1,0 +1,26 @@
+.border-career{
+    /* display: none; */
+    background-color: #FFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.14063rem;
+    box-shadow: 0px 1.5px 3px 0px rgba(0, 0, 0, 0.05);
+}
+.none {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .border-career{
+        flex-direction: column;
+    }
+    
+}
+.ex-btn .active{
+    color: blue !important;
+}
+.jobSummary{
+    max-width: 22rem;
+    border: 0.25px solid var(--lightGrey6-color);
+    background-color: var(--lightBlu4-color);
+}

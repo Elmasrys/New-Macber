@@ -1,0 +1,18 @@
+.blog_card{
+    border: none;
+    background-color: transparent;
+}
+.blog_card .img_container{
+    overflow: hidden;
+}
+.blog_card .img_container img{
+    width: 100%;
+    border-radius: 32px;
+    /* max-height: 314px; */
+    /* object-fit: cover; */
+    transition: all 0.3s ease-in-out !important;
+}
+.blog_card .img_container img:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}

@@ -1,0 +1,97 @@
+.card_topic{
+    bottom: 20px;
+    z-index: 33;
+    width: 40%;
+    position: absolute;
+    left: 30px;    
+}
+.data_card{
+    color: var(--lightWhite-color);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+.title_card_topic{
+    color: var(--lightWhite-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;    
+}
+.disc_card_topic{
+    color: var(--lightWhite-color);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;  
+}
+.btn_card_topic{
+    position: absolute;
+    color: var(--lightWhite-color);
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    z-index: 3;
+    right: 65px;
+    top: 25px;
+    background-color: #ffffff5e;
+    border-radius: 25px;
+    padding: 1rem 2rem;   
+}
+.all_topics{
+    color: #495057;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    margin-right:50px ;
+    cursor: pointer;
+}
+.all_topics.activity{
+    color: black !important;
+}
+.card-details{
+    justify-content: space-between;
+}
+@media screen and  (max-width:575px) {
+.card_topic {
+    width: 90%;
+    bottom: 25px;
+    left: 20px;
+}
+}
+@media screen and (max-width:767px) {
+.btn_all_topics{
+    justify-content: space-around;
+    /* flex-direction: column; */
+    /* text-align: center; */
+}
+.btn_card_topic {
+    right: 20px;
+}
+.all_topics{
+    margin-right: 0;
+}
+.title_card_topic ,
+.disc_card_topic {
+    width: 75%;
+}
+}
+@media screen and (min-width:767px) and (max-width:991px) {
+.card_topic {
+    width: 100%;
+    left: 15px;
+}
+.btn_card_topic {
+    right: 20px;
+}
+.title_card_topic,
+.disc_card_topic {
+    width: 75%;
+}    
+.v_details {
+    margin-bottom: 10px;
+} 
+}
