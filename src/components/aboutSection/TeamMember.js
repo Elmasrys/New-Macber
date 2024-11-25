@@ -23,7 +23,7 @@ const TeamMember = (props)=>{
                   <CardTeam
                     src={team.src}
                     className={
-                      "team-member width-fit-content mx-auto rounded-0"
+                      "team-member width-fit-content mx-auto border-radus-32"
                     }
                     overlay={"team-member-info"}
                     // width="100%"

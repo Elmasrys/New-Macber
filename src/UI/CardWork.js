@@ -31,7 +31,7 @@ const CardWork = (props) => {
         </div>
          <Link to={props.toImg}>
           
-        <Media type="img" src={props.src_Image} />
+        <Media type="img" src={props.src_Image} className='border-radus-32'/>
         </Link>
       </div>
     </>

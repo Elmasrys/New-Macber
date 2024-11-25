@@ -15,7 +15,7 @@ const Team = (props) => {
           <div className="col-xl-3 col-md-6 col-sm-12   mb-xl-0 mb-4 ">
             <CardManger
               src={ceo}
-              className={"team-member rounded-0"}
+              className={"team-member border-radus-32"}
               overlay={"team-member-info"}
               lead={false}
               person={{
@@ -32,7 +32,7 @@ const Team = (props) => {
           <div className="col-xl-3 col-md-6 col-sm-12   mb-xl-0 mb-4  ">
             <CardManger
               src={cco}
-              className={"team-member rounded-0"}
+              className={"team-member border-radus-32"}
               overlay={"team-member-info"}
               lead={false}
               person={{
