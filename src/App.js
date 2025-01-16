@@ -26,6 +26,7 @@ import Contact_us from './components/serviceSection/Contact_us';
 import TypeForm from './components/FormSteps/TypeForm';
 import FormTeam from './components/FormSteps/FormTeam';
 import FormProject from './components/FormSteps/FormProject';
+import SignUp from './components/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,8 @@ const router = createBrowserRouter([
       { path: "joinMacber", element: <Careers /> },
       { path: "joinMacber/:id", element: <CareerDetails /> },
       { path: "insights", element: <Instght /> },
+      { path: "signUp", element: <SignUp/> },
+
       { path: "insights/:id", element: <DetalsCardInt /> },
       {
         path: "contact-us",

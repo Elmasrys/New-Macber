@@ -13,7 +13,7 @@ const CarrerSection = ()=>{
         img: team,
         text: "Team work",
         backgroundColor: "#DCE1FF",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+        // desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
       },
       {
         id: 2,
@@ -21,7 +21,7 @@ const CarrerSection = ()=>{
         text: "Secured Future",
         backgroundColor: "#DCE1FF",
 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+        // desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
       },
       {
         id: 3,
@@ -29,7 +29,7 @@ const CarrerSection = ()=>{
         text: "Learning Opportunity",
         backgroundColor: "#DCE1FF",
 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+        // desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
       },
       {
         id: 4,
@@ -37,7 +37,7 @@ const CarrerSection = ()=>{
         text: "Upgrade Skills",
         backgroundColor: "#DCE1FF",
 
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
+        // desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry",
       },
     ];
     return (

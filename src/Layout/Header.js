@@ -7,6 +7,8 @@ import { useAnimate, stagger } from "framer-motion";
 import { MenuToggle } from "../UI/MenuToggle";
 import  MenuNav  from '../UI/MenuNav';
 import classes from './Header.module.css';
+import SignArrow from '../UI/Svg/SignArrow';
+// import arr from '../assets/icon/prime_sign-in.svg';
 
 function useMenuAnimation(isOpen) {
     const [scope, animate] = useAnimate();
@@ -185,17 +187,6 @@ const Header = ()=>{
                 </NavLink>
               </li>
               <li className="nav-item px-xl-4 px-3">
-                <NavLink className="navbar-brand d-block-md" to={"/"}>
-                  <img
-                    src={isStrickyFixed ? logoDark : logoLight}
-                    alt="macber_logo"
-                    loading="lazy"
-                    width="100%"
-                    style={{ width: "300px" }}
-                  />
-                </NavLink>
-              </li>
-              <li className="nav-item px-xl-4 px-3">
                 <NavLink
                   className={`nav-link px-0 ${classes.nav_link}`}
                   style={({ isActive }) => ({
@@ -212,6 +203,18 @@ const Header = ()=>{
                   <span>Our work</span>
                 </NavLink>
               </li>
+              <li className="nav-item px-xl-4 px-3">
+                <NavLink className="navbar-brand d-block-md" to={"/"}>
+                  <img
+                    src={isStrickyFixed ? logoDark : logoLight}
+                    alt="macber_logo"
+                    loading="lazy"
+                    width="100%"
+                    style={{ width: "300px" }}
+                  />
+                </NavLink>
+              </li>
+           
               <li className="nav-item px-xl-4 px-3">
                 <NavLink
                   className={`nav-link px-0 ${classes.nav_link}`}
@@ -244,6 +247,27 @@ const Header = ()=>{
                   to={"/joinMacber"}
                 >
                   <span>Join Macber</span>
+                </NavLink>
+              </li>
+              <li className="nav-item px-xl-4 px-3">
+                <NavLink
+                  className={`nav-link  lightWhite text-decoration-none btn-outline-white btn ${classes.nav_link}`}
+                  style={({ isActive }) => ({
+                    color: isActive
+                      ? `${isStrickyFixed ? "#2C60F2" : "#69DEEF"}`
+                      : `${isStrickyFixed ? "#000000" : "#F4F7FE"}`,
+                    // borderBottom: isActive
+                    //   ? `2px solid ${isStrickyFixed ? "#2C60F2" : "#69DEEF"}`
+                    //   : "none",
+                    fontWeight: isActive ? 800 : 400,
+                  })}
+                  to={"/signUp"}
+                >
+                Sign up 
+                <SignArrow/>
+                
+                {/* <img src={arr}/> */}
+                  {/* <span  className="lightWhite text-decoration-none btn-outline-white btn">Our work</span> */}
                 </NavLink>
               </li>
             </ul>

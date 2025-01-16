@@ -46,7 +46,7 @@ const teams = [
     src: AhmedGalal,
     person: {
       name: "Ahmed Galal",
-      position: "Head of  software Team",
+      position: "Head of software Team",
     },
   },
   {
@@ -62,19 +62,11 @@ const teams = [
     src: Alhussein,
     person: {
       name: "Alhussien Mohamed",
-      position: "Headof.Net Team",
+      position: "Head of .Net Team",
     },
   },
   {
     id: 6,
-    src: EslamTarek,
-    person: {
-      name: "Eslam Tarek",
-      position: "Ux& Ui designer ",
-    },
-  },
-  {
-    id: 7,
     src: Ayah,
     person: {
       name: "Ayah Tarek",
@@ -82,7 +74,7 @@ const teams = [
     },
   },
   {
-    id: 8,
+    id: 7,
     src: Ahmedsamir,
     person: {
       name: "Ahmed Samir",
@@ -90,16 +82,7 @@ const teams = [
     },
   },
   {
-    id: 10,
-    src: Hanaa,
-    person: {
-      name: "Hanaa Magdy",
-      position: "Tester",
-    },
-  },
- 
-  {
-    id: 13,
+    id: 8,
     src: salma,
     person: {
       name: "Salma Essam",
@@ -107,15 +90,7 @@ const teams = [
     },
   },
   {
-    id: 14,
-    src: Abdo,
-    person: {
-      name: "Abdelrahman Essa",
-      position: "Full Stack . Net",
-    },
-  },
-  {
-    id: 15,
+    id: 9,
     src: AhmedHelmy,
     person: {
       name: "Ahmed Helmy",
@@ -123,15 +98,15 @@ const teams = [
     },
   },
   {
-    id: 16,
+    id: 10,
     src: Ahmed,
     person: {
-      name: "Ahmed mohamed",
+      name: "Ahmed Mohamed",
       position: "Full Stack . Net",
     },
   },
   {
-    id: 17,
+    id: 11,
     src: Mohamed_Yasser,
     person: {
       name: "Mohamed Yasser",
@@ -139,7 +114,7 @@ const teams = [
     },
   },
   {
-    id: 18,
+    id: 12,
     src: Yasser,
     person: {
       name: "Yasser Waseem",
@@ -147,7 +122,7 @@ const teams = [
     },
   },
   {
-    id: 19,
+    id: 13,
     src: Mahmoud,
     person: {
       name: "Mahmoud Mohamed",
@@ -155,7 +130,7 @@ const teams = [
     },
   },
   {
-    id: 20,
+    id: 14,
     src: Hozeefa,
     person: {
       name: "Hozyfa gasm",
@@ -163,4 +138,5 @@ const teams = [
     },
   },
 ];
+
 export default teams;

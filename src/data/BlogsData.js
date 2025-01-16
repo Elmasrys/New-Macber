@@ -1007,9 +1007,9 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
     links: [
       {
         live: "live link",
-        text: "App Store",
-        logo: <AppStore />,
-        href: "https://play.google.com/store/apps/details?id=com.macber.riders",
+        // text: "App Store",
+        // logo: <AppStore />,
+        // href: "https://play.google.com/store/apps/details?id=com.macber.riders",
       },
     ],
     DetailsCompany: [
