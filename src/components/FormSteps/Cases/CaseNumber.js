@@ -6,7 +6,7 @@ import { FormContext } from "../../../context/ContextForm";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 import { useState, useContext } from "react";
-const CaseNumber = ({values, touched, errors, handleChange, handleBlur , country}) => {
+const CaseNumber = ({values, touched, errors, handleChange, handleBlur , country , num}) => {
    const { getValue } = useContext(FormContext);
     const [selected, setSelected] = useState();
     const [phone, setPhone] = useState();
@@ -22,7 +22,7 @@ const CaseNumber = ({values, touched, errors, handleChange, handleBlur , country
           <div className=" step ">
             <div className="d-flex">
               <Paragraph className="title-white-sm mb-4 d-flex  ">
-                6
+              {num}
                 <img src={Arrow} alt="#" className="mx-3" />
               </Paragraph>
 

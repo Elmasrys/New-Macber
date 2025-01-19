@@ -1,19 +1,19 @@
-import Paragraph from "../../../UI/Paragraph";
-import Arrow from "../../../assets/icon/arrowRight.svg";
+import Paragraph from "../../../../UI/Paragraph";
+import Arrow from "../../../../assets/icon/arrowRight.svg";
 
-const CaseEmail = ({values, touched, errors, handleChange, handleBlur ,num}) => {
+const Otp = ({values, touched, errors, handleChange, handleBlur ,num }) => {
     return (
       <>
         <div className="container py-4 pt-95  wow animate__animated animate__fadeInLeft animate__delay">
           <div className=" step ">
             <div className="d-flex">
               <Paragraph className="title-white-sm mb-4 d-flex  ">
-                {num}
+             {num}
                 <img src={Arrow} alt="#" className="mx-3" />
               </Paragraph>
 
               <Paragraph className="title-white-sm mb-4 d-flex ">
-                What's Your Email?
+              Otp
               </Paragraph>
             </div>
             <label htmlFor="email" className="form-label">
@@ -22,7 +22,7 @@ const CaseEmail = ({values, touched, errors, handleChange, handleBlur ,num}) => 
                 id="email"
                 className="input-step my-5"
                 type="text"
-                placeholder="Type your email"
+                placeholder="Type your Otp"
                 name="email"
                 onChange={handleChange}
                 value={values.email}
@@ -36,4 +36,4 @@ const CaseEmail = ({values, touched, errors, handleChange, handleBlur ,num}) => 
       </>
     );
 };
-export default CaseEmail;
+export default Otp;

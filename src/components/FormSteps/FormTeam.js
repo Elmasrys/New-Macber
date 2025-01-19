@@ -105,6 +105,7 @@ const FormTeam = () => {
       case 1:
         return (
           <CaseGoal
+         num={1}
             values={values}
             touched={touched}
             errors={errors}
@@ -115,6 +116,7 @@ const FormTeam = () => {
       case 2:
         return (
           <CasePlatForm
+          num={2}
             values={values}
             touched={touched}
             errors={errors}
@@ -125,6 +127,7 @@ const FormTeam = () => {
       case 3:
         return (
           <CaseName
+          num={3}
             values={values}
             touched={touched}
             errors={errors}
@@ -135,6 +138,7 @@ const FormTeam = () => {
       case 4:
         return (
           <CaseEmail
+          num={4}
             values={values}
             touched={touched}
             errors={errors}
@@ -145,6 +149,7 @@ const FormTeam = () => {
       case 5:
         return (
           <CaseCountry
+          num={5}
             values={values}
             touched={touched}
             errors={errors}
@@ -156,6 +161,7 @@ const FormTeam = () => {
       case 6:
         return (
           <CaseNumber
+          num={6}
             // country={getCountry}
             values={values}
             touched={touched}
@@ -167,6 +173,7 @@ const FormTeam = () => {
       case 7:
         return (
           <CaseThanks
+          // num={num}
             values={values}
             touched={touched}
             errors={errors}

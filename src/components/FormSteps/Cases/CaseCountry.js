@@ -3,7 +3,7 @@ import Arrow from "../../../assets/icon/arrowRight.svg";
 import React, { useState , useContext } from "react";
 import ReactFlagsSelect from "react-flags-select";
 import {FormContext} from "../../../context/ContextForm";
-const CaseCountry = ({values, touched, errors, handleChange, handleBlur , valueCountry}) => {
+const CaseCountry = ({values, touched, errors, handleChange, handleBlur , valueCountry , num}) => {
   // const { setGetValue } = useContext(FormContext);
   const [selected, setSelected] = useState("Egypt");
   function Hand(code) {
@@ -21,7 +21,7 @@ const CaseCountry = ({values, touched, errors, handleChange, handleBlur , valueC
           <div className=" step ">
             <div className="d-flex">
               <Paragraph className="title-white-sm mb-4 d-flex  ">
-                5
+                {num}
                 <img src={Arrow} alt="#" className="mx-3" />
               </Paragraph>
 

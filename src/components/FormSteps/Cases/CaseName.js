@@ -4,7 +4,7 @@ import { useContext } from "react";
 import {FormContext} from "../../../context/ContextForm";
 
 
-const CaseName = ({values, touched, errors, handleChange, handleBlur}) => {
+const CaseName = ({values, touched, errors, handleChange, handleBlur,num}) => {
   const { setName } = useContext(FormContext);
     return (
       <>
@@ -12,7 +12,7 @@ const CaseName = ({values, touched, errors, handleChange, handleBlur}) => {
           <div className=" step ">
             <div className="d-flex">
               <Paragraph className="title-white-sm mb-4 d-flex  ">
-                3
+                {num}
                 <img src={Arrow} alt="#" className="mx-3" />
               </Paragraph>
 
@@ -20,6 +20,7 @@ const CaseName = ({values, touched, errors, handleChange, handleBlur}) => {
                 What's your Name ?
               </Paragraph>
             </div>
+            
             <label htmlFor="answer" className="form-label">
               <input
                 autocomplete="off"

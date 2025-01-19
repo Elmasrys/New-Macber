@@ -1,14 +1,14 @@
 import Paragraph from "../../../UI/Paragraph";
 import Arrow from "../../../assets/icon/arrowRight.svg";
 
-const CaseLong = ({values, touched, errors, handleChange, handleBlur}) => {
+const CaseLong = ({values, touched, errors, handleChange, handleBlur, num}) => {
     return (
       <>
         <div className=" container py-4  wow animate__animated animate__fadeInLeft animate__delay">
           <div className=" step pt-0">
             <div className="d-flex">
               <Paragraph className="title-white-sm text-capitalize mb-4 ">
-                2
+                {num}
                 <img src={Arrow} alt="#" className="mx-3" />
               </Paragraph>
               <Paragraph className="title-white-sm text-capitalize mb-4">

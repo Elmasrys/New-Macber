@@ -113,6 +113,7 @@ const FormProject = () => {
       case 1:
         return (
           <CaseDev
+          num={1}
             values={values}
             touched={touched}
             errors={errors}
@@ -123,6 +124,7 @@ const FormProject = () => {
       case 2:
         return (
           <CaseLong
+          num={2}
             values={values}
             touched={touched}
             errors={errors}
@@ -133,6 +135,7 @@ const FormProject = () => {
       case 3:
         return (
           <CaseName
+          num={3}
             values={values}
             touched={touched}
             errors={errors}
@@ -143,6 +146,7 @@ const FormProject = () => {
       case 4:
         return (
           <CaseEmail
+          num={4}
             values={values}
             touched={touched}
             errors={errors}
@@ -153,6 +157,7 @@ const FormProject = () => {
       case 5:
         return (
           <CaseCountry
+          num={5}
             values={values}
             touched={touched}
             errors={errors}
@@ -163,6 +168,7 @@ const FormProject = () => {
       case 6:
         return (
           <CaseNumber
+          num={6}
             values={values}
             touched={touched}
             errors={errors}
