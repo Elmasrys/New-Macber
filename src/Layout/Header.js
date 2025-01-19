@@ -274,13 +274,13 @@ const Header = () => {
             </li>
             <li className="nav-item px-xl-4 px-3">
               <NavLink
-                className={`nav-link  lightWhite text-decoration-none btn-outline-white btn ${classes.nav_link}`}
+                className={`nav-link  lightWhite text-decoration-none btn-outline-white btn py-1  px-3  ${classes.nav_link}`}
                 style={({ isActive }) => ({
                   color: isActive
                     ? `${isStrickyFixed ? "#2C60F2" : "#69DEEF"}`
                     : `${isStrickyFixed ? "#000000" : "#F4F7FE"}`,
 
-                  fontWeight: isActive ? 800 : 400,
+                  // fontWeight: isActive ? 800 : 400,
                 })}
                 to={"/signUp"}
                 onClick={(e)=>setIsActiving(!isActiving)}

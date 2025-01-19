@@ -9,7 +9,7 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
             <div className="d-flex">
             
 
-              <Paragraph className="title-white-sm mb-4 d-flex ">
+              <Paragraph className="title-white-sm  d-flex ">
                 What's Your name?
               </Paragraph>
             </div>
@@ -17,7 +17,7 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
               <input
                 autocomplete="off"
                 id="email"
-                className="input-step  my-4"
+                className="input-step p-3  my-4"
                 type="text"
                 placeholder="Type your name"
                 name="email"
@@ -33,7 +33,7 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
             <div className="d-flex">
             
 
-              <Paragraph className="title-white-sm mb-4 d-flex ">
+              <Paragraph className="title-white-sm  d-flex ">
                 What's Your Phone?
               </Paragraph>
             </div>
@@ -41,7 +41,7 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
               <input
                 autocomplete="off"
                 id="email"
-                className="input-step  my-4"
+                className="input-step p-3  my-4"
                 type="text"
                 placeholder="Type your Phone"
                 name="email"
@@ -57,7 +57,7 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
             <div className="d-flex">
             
 
-              <Paragraph className="title-white-sm mb-4 d-flex ">
+              <Paragraph className="title-white-sm  d-flex ">
                 What's Your Email?
               </Paragraph>
             </div>
@@ -65,7 +65,7 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
               <input
                 autocomplete="off"
                 id="email"
-                className="input-step  my-4"
+                className="input-step p-3  my-4"
                 type="text"
                 placeholder="Type your email"
                 name="email"
@@ -84,7 +84,7 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
                 <img src={Arrow} alt="#" className="mx-3" />
               </Paragraph> */}
 
-              <Paragraph className="title-white-sm mb-4 d-flex ">
+              <Paragraph className="title-white-sm  d-flex ">
                 What's Your password ?
               </Paragraph>
             </div>
@@ -92,7 +92,7 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
               <input
                 autocomplete="off"
                 id="email"
-                className="input-step  my-4"
+                className="input-step p-3 my-4"
                 type="text"
                 placeholder="Type your password "
                 name="email"
