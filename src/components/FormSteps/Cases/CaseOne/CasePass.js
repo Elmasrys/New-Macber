@@ -4,7 +4,7 @@ import Arrow from "../../../../assets/icon/arrowRight.svg";
 const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => {
     return (
       <>
-        <div className="container py-4 pt-95  wow animate__animated animate__fadeInLeft animate__delay">
+        <div className="container py-4   wow animate__animated animate__fadeInLeft animate__delay">
         <div className=" step p-0">
             <div className="d-flex">
             
@@ -13,20 +13,20 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
                 What's Your name?
               </Paragraph>
             </div>
-            <label htmlFor="email" className="form-label">
+            <label htmlFor="name" className="form-label">
               <input
                 autocomplete="off"
-                id="email"
+                id="name"
                 className="input-step p-3  my-4"
                 type="text"
                 placeholder="Type your name"
-                name="email"
+                name="name"
                 onChange={handleChange}
-                value={values.email}
+                value={values.name}
               />
             </label>
-            {errors.email && touched.email && (
-              <p className="text-danger mb-0">{errors.email}</p>
+            {errors.name && touched.name && (
+              <p className="text-danger mb-0">{errors.name}</p>
             )}
           </div>
         <div className=" step p-0">
@@ -37,20 +37,20 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
                 What's Your Phone?
               </Paragraph>
             </div>
-            <label htmlFor="email" className="form-label">
+            <label htmlFor="Phone" className="form-label">
               <input
                 autocomplete="off"
-                id="email"
+                id="Phone"
                 className="input-step p-3  my-4"
                 type="text"
                 placeholder="Type your Phone"
-                name="email"
+                name="Phone"
                 onChange={handleChange}
-                value={values.email}
+                value={values.Phone}
               />
             </label>
-            {errors.email && touched.email && (
-              <p className="text-danger mb-0">{errors.email}</p>
+            {errors.Phone && touched.Phone && (
+              <p className="text-danger mb-0">{errors.Phone}</p>
             )}
           </div>
           <div className=" step p-0">
@@ -79,29 +79,25 @@ const CasePass = ({values, touched, errors, handleChange, handleBlur , num}) => 
           </div>
           <div className=" step p-0">
             <div className="d-flex">
-              {/* <Paragraph className="title-white-sm mb-4 d-flex  ">
-                {num}
-                <img src={Arrow} alt="#" className="mx-3" />
-              </Paragraph> */}
 
               <Paragraph className="title-white-sm  d-flex ">
                 What's Your password ?
               </Paragraph>
             </div>
-            <label htmlFor="email" className="form-label">
+            <label htmlFor="password" className="form-label">
               <input
                 autocomplete="off"
-                id="email"
+                id="password"
                 className="input-step p-3 my-4"
-                type="text"
+                type="password"
                 placeholder="Type your password "
-                name="email"
+                name="password"
                 onChange={handleChange}
-                value={values.email}
+                value={values.password}
               />
             </label>
-            {errors.email && touched.email && (
-              <p className="text-danger mb-0">{errors.email}</p>
+            {errors.password && touched.password && (
+              <p className="text-danger mb-0">{errors.password}</p>
             )}
           </div>
         </div>
