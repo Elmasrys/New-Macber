@@ -15,13 +15,12 @@ const KnowAbotUS = () => {
               <div className="mb-3">
                 <SectionTitle
                   className="bold-400 darkBlue"
-                  sectTilte={" Launch Better Products"}
+                  sectTilte={"Accelerate Innovation. Unlock Efficiency. Deliver at Scale."}
                 />
                 <Paragraph className="desc-black w-80 my-2 t_just">
-                  Focus on your core competencies and strategic initiatives
-                  while we handle the complexities of software development. By
-                  entrusting us with your product development, you gain the
-                  freedom to excel in areas that drive your business forward.
+                  We help ambitious organizations build, scale, and optimize their digital capabilities. 
+                  From deploying top-tier engineering teams to developing AI-powered products 
+                  and transforming global events—Macber delivers solutions that move your business forward.
                 </Paragraph>
               </div>
               <div className="">
