@@ -39,15 +39,6 @@ const TeamMember = (props)=>{
               );
             })}
           </div>
-          <div className="col-12 text-center mt-5">
-            <Button
-              className="btn-blue btn-scale"
-              tagType="link"
-              onclick={handleShowMore}
-            >
-              show more
-            </Button>
-          </div>
         </div>
       </>
     );
