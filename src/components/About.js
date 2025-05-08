@@ -28,7 +28,7 @@ const About = () => {
           <SectionHeader
             bg={bg}
             titleName="w-70"
-            title={"The Leading Product Innovation Agency in MENA"}
+            title={"Global Tech. Regional Expertise. Real Impact."}
             classNameOne={"px_btn"}
             callToActionOne={"contact us"}
             to={'/contact-us'}
@@ -60,41 +60,9 @@ const About = () => {
             </div>
             <div className="col-xl-8 ">
               <Paragraph className="text-black-light pt-xl-5 pt-2  t_just">
-                In 2014, our founder embarked on an ambitious journey,
-                challenging the marketing scene with innovative and futuristic
-                technologies, where Macber emerged as a leader with distinctive
-                products that enhance the customer experience such as events
-                registration systems and integrated Augmented and Mixed Reality
-                products.
-              </Paragraph>
-              <Paragraph className="text-black-light pt-2  t_just">
-                From those early days, the company has transformed into a design
-                and product innovation powerhouse, leaving an indelible mark on
-                the industry with its creative and customer centric DNA. Macber
-                has blossomed into an internationally recognized force,
-                extending its influence across the MENA region. From pioneering
-                innovative marketing solutions to becoming a trusted global
-                partner, Macber has thrived on innovation and creativity,
-                boasting a track record of over 200 satisfied customers and 1200
-                successful projects.
-              </Paragraph>
-              <Paragraph className="text-black-light pt-2  t_just">
-                Headquartered in the UK, Macber strategically operates in the
-                MENA region, with a stronghold on the market in Egypt, and
-                notable presence in KSA and UAE. This global positioning allows
-                us to deliver world-class product development services, catering
-                to the dynamic needs of businesses in the Middle East. Fuelling
-                Macber's success is an expert team of passionate software
-                developers, designers, and project managers. Their collaborative
-                approach involves working closely with clients to understand
-                unique needs and objectives, crafting tailored solutions that
-                surpass expectations. At the core of Macber's ethos is an
-                unwavering commitment to quality, exceptional customer service,
-                and staying at the forefront of technology trends. Whether it is
-                custom product development, mobile app development, or web
-                development services, Macber stands ready to empower businesses
-                to achieve their goals with the same ambition that
-                fuelled its inception.
+                <Paragraph className="title-blue">Global Technology Partner for Digital Transformation</Paragraph>
+                Macber is a UK-headquartered technology company with deep operational roots in Egypt, Saudi Arabia, and the UAE. We partner with ambitious organizations to deliver high-impact digital solutions—combining engineering excellence, strategic thinking, and regionally aligned execution.
+                We build long-term partnerships that enable growth, efficiency, and innovation across industries. From digital product development and AI automation to large-scale event technology, Macber operates at the intersection of creativity, technology, and impact.
               </Paragraph>
             </div>
           </div>
