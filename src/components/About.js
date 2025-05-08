@@ -45,12 +45,12 @@ const About = () => {
       <div className="container py-5">
         <div className="pt-5">
           <Paragraph className=" title-blue ">Company Overview</Paragraph>
-          <div className="row">
-            <div className="col-xl-4  pt-5">
+          <div className="row justify-content-center">
+            <div className="col-12 pt-5">
               <Counter
-                flex_cols={"col-7 pb-2"}
+                flex_cols={"col-3 pb-2"}
                 flex_box={"flex_box"}
-                border_type={"border_bottom"}
+                border_type={"border_right"}
                 padding={"py-3"}
                 classNameForCounter={"desc-blue small-blue"}
                 classNameForText={"title-black small-black pt-3"}
