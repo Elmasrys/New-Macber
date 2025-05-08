@@ -31,13 +31,20 @@
 
 .service-card h3 {
   color: var(--darkBlue-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.service-card h4 {
+  color: var(--blue_dark_color);
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .service-card > p {
   color: var(--grey-color);
   margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
 .service-details h4 {
@@ -65,6 +72,7 @@
   color: var(--grey-color);
   position: relative;
   padding-left: 1.5rem;
+  line-height: 1.5;
 }
 
 .ideal-for li:before {
@@ -77,17 +85,22 @@
 .why-macber {
   text-align: center;
   padding: 3rem 0;
+  background: var(--lightBlue-color);
+  border-radius: 10px;
+  margin-top: 2rem;
 }
 
 .why-macber h2 {
   color: var(--darkBlue-color);
   margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .benefits {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  padding: 0 2rem;
 }
 
 .benefit {
@@ -97,10 +110,12 @@
 .benefit h4 {
   color: var(--main-color);
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .benefit p {
   color: var(--grey-color);
+  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
@@ -114,5 +129,6 @@
 
   .benefits {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 }

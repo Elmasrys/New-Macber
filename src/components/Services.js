@@ -4,14 +4,15 @@ import SectionHeader from '../Layout/SectionHeader';
 import bg from '../assets/New/service-bg.jpg';
 import MainHeaderWrapper from '../Layout/MainHeaderWrapper';
 import './Services.css';
-import { FaUsers, FaRocket, FaLaptopCode } from 'react-icons/fa';
+import { FaUsers, FaLaptopCode, FaRegCalendarCheck } from 'react-icons/fa';
 
-const ServiceCard = ({ title, description, services, idealFor, icon: Icon }) => (
+const ServiceCard = ({ title, subtitle, description, services, idealFor, icon: Icon }) => (
   <div className="service-card">
     <div className="service-icon">
       <Icon size={40} />
     </div>
     <h3>{title}</h3>
+    <h4>{subtitle}</h4>
     <p>{description}</p>
     <div className="service-details">
       <h4>Key Services:</h4>
@@ -37,7 +38,8 @@ const Services = () => {
   const servicesData = {
     amplify: {
       title: "Macber Amplify",
-      description: "Agile Teams. Enterprise Delivery. Startup Agility.",
+      subtitle: "Agile Teams. Enterprise Delivery. Startup Agility.",
+      description: "Macber Amplify provides dedicated development teams and specialized talent to extend your technical capacity. Whether you're launching a new product or scaling an existing one, we help you move faster—with flexibility and focus.",
       services: [
         {
           title: "Dedicated Development Teams",
@@ -61,7 +63,8 @@ const Services = () => {
     },
     stage: {
       title: "Macber Stage",
-      description: "Next-Gen Event Technology for Memorable Experiences",
+      subtitle: "Next-Gen Event Technology for Memorable Experiences",
+      description: "Macber Stage helps organizers digitize, streamline, and elevate their events—whether physical, virtual, or hybrid. Our robust infrastructure and experiential tech turn events into seamless, engaging experiences.",
       services: [
         {
           title: "Event Registration Platform",
@@ -81,11 +84,12 @@ const Services = () => {
         "Government and enterprise events",
         "Agencies producing branded experiences"
       ],
-      icon: FaRocket
+      icon: FaRegCalendarCheck
     },
     studio: {
       title: "Macber Studio",
-      description: "Intelligent Software, Tailored to You",
+      subtitle: "Intelligent Software, Tailored to You",
+      description: "Macber Studio is your full-service product development partner. We design, engineer, and scale custom digital solutions—powered by automation, AI, and clean UX.",
       services: [
         {
           title: "AI Development & Automation",
