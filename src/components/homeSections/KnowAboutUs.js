@@ -23,21 +23,7 @@ const KnowAbotUS = () => {
                   and transforming global events—Macber delivers solutions that move your business forward.
                 </Paragraph>
               </div>
-              <div className="">
-                <SectionTitle
-                  className="bold-400 darkBlue"
-                  sectTilte={"  Scale Up Your Team"}
-                />
-                <Paragraph className="desc-black my-2 w-80 t_just">
-                  Whether you need to augment your existing workforce or
-                  assemble an entirely new development team, we have the
-                  resources and flexibility to meet your requirements. Our
-                  collaborative approach ensures seamless integration with your
-                  in-house team, allowing for efficient communication, faster
-                  time-to-market,and enhanced productivity. Together, we can
-                  achieve remarkable results.
-                </Paragraph>
-              </div>
+              
             </div>
           </div>
           <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12">
