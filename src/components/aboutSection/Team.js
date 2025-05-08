@@ -9,7 +9,7 @@ const Team = (props) => {
     <>
       <div className={`container ${props.padding}`}>
         <div className="">
-          <SectionTitle sectTilte={"Meet the Team"} padding={""} />
+          <SectionTitle sectTilte={"Our Leadership"} padding={""} />
         </div>
         <div className="row justify-content-center m-auto team-desktop">
           <div className="col-xl-3 col-md-6 col-sm-12   mb-xl-0 mb-4 ">
