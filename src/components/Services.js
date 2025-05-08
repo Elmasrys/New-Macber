@@ -3,31 +3,30 @@ import React from 'react';
 import SectionHeader from '../Layout/SectionHeader';
 import bg from '../assets/New/service-bg.jpg';
 import MainHeaderWrapper from '../Layout/MainHeaderWrapper';
-import './Services.css';
 import { FaUsers, FaLaptopCode, FaRegCalendarCheck } from 'react-icons/fa';
 
 const ServiceCard = ({ title, subtitle, description, services, idealFor, icon: Icon }) => (
-  <div className="service-card">
+  <div className="card-service p-5">
     <div className="service-icon">
       <Icon size={40} />
     </div>
-    <h3>{title}</h3>
-    <h4>{subtitle}</h4>
-    <p>{description}</p>
+    <h3 className="darkBlue bold-700 font-sm">{title}</h3>
+    <h4 className="lightBlue3 bold-500">{subtitle}</h4>
+    <p className="lightGrey5">{description}</p>
     <div className="service-details">
-      <h4>Key Services:</h4>
+      <h4 className="darkBlue bold-500">Key Services:</h4>
       <ul>
         {services.map((service, index) => (
           <li key={index}>
-            <h5>{service.title}</h5>
-            <p>{service.description}</p>
+            <h5 className="lightBlue3 bold-500">{service.title}</h5>
+            <p className="lightGrey5">{service.description}</p>
           </li>
         ))}
       </ul>
-      <h4>Ideal For:</h4>
+      <h4 className="darkBlue bold-500">Ideal For:</h4>
       <ul className="ideal-for">
         {idealFor.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} className="lightGrey5">{item}</li>
         ))}
       </ul>
     </div>
@@ -132,27 +131,35 @@ const Services = () => {
         </MainHeaderWrapper>
       </div>
       
-      <div className="services-container">
-        <div className="services-grid">
+      <div className="container py_5">
+        <div className="row g-4">
           {Object.values(servicesData).map((service, index) => (
-            <ServiceCard key={index} {...service} />
+            <div key={index} className="col-lg-4 col-md-6">
+              <ServiceCard {...service} />
+            </div>
           ))}
         </div>
 
-        <div className="why-macber">
-          <h2>Why Work With Macber?</h2>
-          <div className="benefits">
-            <div className="benefit">
-              <h4>✅ Global-Quality Talent</h4>
-              <p>Our teams combine engineering excellence with product thinking.</p>
+        <div className="why-macber mt-5 py-5 backGround_light rounded">
+          <h2 className="darkBlue bold-700 mb-4">Why Work With Macber?</h2>
+          <div className="row g-4 px-4">
+            <div className="col-md-4">
+              <div className="benefit">
+                <h4 className="lightBlue3 bold-600">✅ Global-Quality Talent</h4>
+                <p className="lightGrey5">Our teams combine engineering excellence with product thinking.</p>
+              </div>
             </div>
-            <div className="benefit">
-              <h4>✅ Modular Engagement Models</h4>
-              <p>From full outsourcing to hybrid squads and on-site support.</p>
+            <div className="col-md-4">
+              <div className="benefit">
+                <h4 className="lightBlue3 bold-600">✅ Modular Engagement Models</h4>
+                <p className="lightGrey5">From full outsourcing to hybrid squads and on-site support.</p>
+              </div>
             </div>
-            <div className="benefit">
-              <h4>✅ Regionally Grounded, Globally Aligned</h4>
-              <p>Deep experience across MENA with delivery hubs in the UK, Egypt, KSA, and UAE.</p>
+            <div className="col-md-4">
+              <div className="benefit">
+                <h4 className="lightBlue3 bold-600">✅ Regionally Grounded, Globally Aligned</h4>
+                <p className="lightGrey5">Deep experience across MENA with delivery hubs in the UK, Egypt, KSA, and UAE.</p>
+              </div>
             </div>
           </div>
         </div>

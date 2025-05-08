@@ -193,6 +193,47 @@ body{
   font-size: 23px;
   font-weight: 700;
 }
+/* Services Page Styles */
+.card-service {
+  background: var(--white-color);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-service:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.service-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.service-details li {
+  margin-bottom: 1rem;
+}
+
+.ideal-for li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+.ideal-for li:before {
+  content: "•";
+  color: var(--main-color);
+  position: absolute;
+  left: 0;
+}
+
 /* scroll bar */
 /* width */
 ::-webkit-scrollbar {
