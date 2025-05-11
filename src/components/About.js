@@ -39,10 +39,7 @@ const About = () => {
       <section className="py_7 backGround_trans">
         <div className="container py-xl-5 text-center  ">
           <Paragraph className="text-quote font-lg">
-            "We Are Builders, Strategists, and Impact-Driven Technologists"
-          </Paragraph>
-          <Paragraph className="text-quote-desc font-md pt-4">
-            Led by experienced founders and operators, Macber brings together product thinkers, engineers, analysts, and creatives who operate across borders and industries. Our teams are culturally fluent, multidisciplinary, and laser-focused on outcomes—not just outputs. We move fast, think boldly, and take ownership from idea to execution.
+            “We Are Thinkers , Designers & Creative Technologists”
           </Paragraph>
         </div>
       </section>
@@ -66,8 +63,8 @@ const About = () => {
       <Team padding={"py_5"} />
       <TeamGallery />
       <OurOffices />
-
-
+   
+                
     </>
   );
 };
