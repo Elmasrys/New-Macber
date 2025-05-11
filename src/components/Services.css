@@ -26,6 +26,7 @@
 .service-icon {
   color: var(--main-color);
   margin-bottom: 1rem;
+  background: transparent;
 }
 
 .service-card h3 {
