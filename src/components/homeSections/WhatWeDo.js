@@ -2,6 +2,7 @@ import Paragraph from "../../UI/Paragraph";
 import SectionTitle from "../../Layout/SectionTitle";
 import Button from "../../UI/Button";
 import BackGroundLight from "../../Layout/BackGroundLight";
+import styles from "./WhatWeDo.module.css";
 
 const WhatWeDo = () => {
   return (
