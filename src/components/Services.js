@@ -119,13 +119,13 @@ const Services = () => {
   return (
     <>
       <div className="overflow">
-        <MainHeaderWrapper bg={bg} height="38rem" animate={true}>
+        <MainHeaderWrapper bg={bg} height="45rem" animate={true}>
           <SectionHeader
             titleName="w-80"
             title="Strategic Technology Solutions Built for Scale"
             desc="At Macber, we don't just build software—we partner with you to create impact. Through our three specialized verticals, we offer comprehensive digital services that help you scale your business, optimize operations, and innovate faster."
             callToActionOne="Talk to us"
-            classNameOne="px_btn"
+            classNameOne="px_btn animate__animated animate__fadeInUp"
             to="/contact-us"
           />
         </MainHeaderWrapper>

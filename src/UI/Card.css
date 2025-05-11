@@ -2,6 +2,48 @@
     border: none;
     background-color: transparent;
 }
+
+.card-service {
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(44, 96, 242, 0.1);
+}
+
+.card-service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(44, 96, 242, 0.1);
+}
+
+.service-icon {
+    background: linear-gradient(135deg, #2C60F2 0%, #69DEEF 100%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.service-icon svg {
+    color: white;
+}
+
+.service-details {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(44, 96, 242, 0.1);
+}
+
+.service-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.service-details li {
+    margin-bottom: 1rem;
+}
 .blog_card .img_container{
     overflow: hidden;
 }
