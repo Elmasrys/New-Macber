@@ -5,10 +5,10 @@ import bg from '../assets/New/service-bg.jpg';
 import MainHeaderWrapper from '../Layout/MainHeaderWrapper';
 import { FaUsers, FaLaptopCode, FaRegCalendarCheck } from 'react-icons/fa';
 
-const ServiceCard = ({ title, subtitle, description, services, idealFor, icon: Icon }) => (
+const ServiceCard = ({ title, subtitle, description, services, idealFor, icon: Icon, iconColor }) => (
   <div className="card-service p-5">
     <div className="service-icon">
-      <Icon size={40} />
+      <Icon size={40} color={iconColor} />
     </div>
     <h3 className="darkBlue bold-700 font-sm">{title}</h3>
     <h4 className="lightBlue3 bold-500">{subtitle}</h4>
@@ -58,7 +58,8 @@ const Services = () => {
         "Enterprises needing rapid team expansion",
         "Product teams that need delivery muscle without overhead"
       ],
-      icon: FaUsers
+      icon: FaUsers,
+      iconColor: '#eb5b63'
     },
     stage: {
       title: "Macber Stage",
@@ -83,7 +84,8 @@ const Services = () => {
         "Government and enterprise events",
         "Agencies producing branded experiences"
       ],
-      icon: FaRegCalendarCheck
+      icon: FaRegCalendarCheck,
+      iconColor: '#2c60f4'
     },
     studio: {
       title: "Macber Studio",
@@ -112,7 +114,8 @@ const Services = () => {
         "Product companies building AI-powered tools",
         "Organizations seeking to streamline operations through automation"
       ],
-      icon: FaLaptopCode
+      icon: FaLaptopCode,
+      iconColor: '#07174C'
     }
   };
 
