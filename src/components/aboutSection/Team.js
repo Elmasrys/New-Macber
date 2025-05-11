@@ -20,7 +20,7 @@ const Team = (props) => {
               lead={false}
               person={{
                 name: "Ahmed Medhat",
-                position: "Chairman & CEO",
+                position: "Partner & CEO",
                 socialLinks: {
                   linkedin: "https://www.linkedin.com/",
                   behance: "",
@@ -36,8 +36,8 @@ const Team = (props) => {
               overlay={"team-member-info"}
               lead={false}
               person={{
-                name: "Sherif K. Elmasry",
-                position: "Vice Chairman & CCO",
+                name: "Sherif Elmasry",
+                position: "Partner & CBO",
                 socialLinks: {
                   linkedin: "https://www.linkedin.com/",
                 },
