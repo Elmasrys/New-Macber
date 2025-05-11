@@ -83,39 +83,97 @@
 
 .why-macber {
   text-align: center;
-  padding: 3rem 0;
-  background: var(--lightBlue-color);
-  border-radius: 10px;
-  margin-top: 2rem;
-    transform: translateY(20px);
-    opacity: 0;
-    animation: fadeUp 0.8s ease forwards;
-    animation-delay: 0.3s;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--lightBlue-color) 0%, rgba(44, 96, 242, 0.05) 100%);
+  border-radius: 20px;
+  margin-top: 3rem;
+  box-shadow: 0 10px 30px rgba(44, 96, 242, 0.08);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.why-macber h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--darkBlue-color) 0%, var(--main-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes fadeUp {
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .benefits {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  padding: 0 2rem;
+  padding: 1rem;
 }
 
 .benefit {
-  padding: 1.5rem;
-    border-radius: 12px;
-    background: rgba(44, 96, 242, 0.03);
-    transition: all 0.3s ease;
+  padding: 2rem;
+  border-radius: 16px;
+  background: white;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(44, 96, 242, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(135deg, var(--main-color) 0%, var(--blue_dark_color) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .benefit:hover {
-    background: rgba(44, 96, 242, 0.06);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(44, 96, 242, 0.1);
+}
+
+.benefit:hover::before {
+  opacity: 1;
+}
+
+.benefit h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--darkBlue-color);
+}
+
+.benefit p {
+  line-height: 1.6;
+  color: var(--grey-color);
+}
+
+@media (max-width: 768px) {
+  .why-macber {
+    padding: 3rem 1rem;
+  }
+  
+  .why-macber h2 {
+    font-size: 2rem;
+  }
+  
+  .benefits {
+    gap: 1rem;
+  }
+  
+  .benefit {
+    padding: 1.5rem;
+  }
 }
 
 .benefit h4 {
