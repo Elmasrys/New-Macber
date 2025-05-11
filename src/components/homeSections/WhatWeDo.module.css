@@ -1,3 +1,47 @@
 .services{
     border-left: 1px solid var(--lightGrey-color);
 }
+
+.section_container {
+    padding: 6rem 0;
+}
+
+.section_title {
+    margin-bottom: 4rem;
+}
+
+.service_card {
+    padding: 2.5rem;
+    height: 100%;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.service_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    background: white;
+}
+
+.service_title {
+    margin-bottom: 1.5rem;
+}
+
+.service_subtitle {
+    margin-bottom: 1rem;
+}
+
+.service_list {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service_list li {
+    margin-bottom: 1rem;
+}
+
+.service_list li:last-child {
+    margin-bottom: 0;
+}

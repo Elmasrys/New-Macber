@@ -11,7 +11,7 @@ const WhatWeDo = () => {
           <SectionTitle sectTilte={"What We Do"} className="text-center mb-5" />
           <div className="row g-4">
             <div className="col-lg-4 col-md-12">
-              <div className="h-100 p-4">
+              <div className={styles.service_card}>
                 <SectionTitle sectTilte={"Macber Studio"} className="mb-3" />
                 <Paragraph className="subtitle-dark mb-2">
                   Custom-Built Software Solutions
@@ -29,7 +29,7 @@ const WhatWeDo = () => {
             </div>
 
             <div className="col-lg-4 col-md-12">
-              <div className="h-100 p-4">
+              <div className={styles.service_card}>
                 <SectionTitle sectTilte={"Macber Amplify"} className="mb-3" />
                 <Paragraph className="subtitle-dark mb-2">
                   Agile Talent, Deployed at Scale
@@ -46,7 +46,7 @@ const WhatWeDo = () => {
             </div>
 
             <div className="col-lg-4 col-md-12">
-              <div className="h-100 p-4">
+              <div className={styles.service_card}>
                 <SectionTitle sectTilte={"Macber Stage"} className="mb-3" />
                 <Paragraph className="subtitle-dark mb-2">
                   Technology That Powers Exceptional Events
