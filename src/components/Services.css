@@ -162,15 +162,15 @@
   .why-macber {
     padding: 3rem 1rem;
   }
-  
+
   .why-macber h2 {
     font-size: 2rem;
   }
-  
+
   .benefits {
     gap: 1rem;
   }
-  
+
   .benefit {
     padding: 1.5rem;
   }
@@ -199,5 +199,8 @@
   .benefits {
     grid-template-columns: 1fr;
     padding: 0 1rem;
+  }
+  .services-grid {
+    gap: 1.5rem;
   }
 }

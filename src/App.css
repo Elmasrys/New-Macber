@@ -194,21 +194,48 @@ body{
   font-weight: 700;
 }
 /* Services Page Styles */
-.card-service {
-  background: var(--white-color);
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  height: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.services-container {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.card-service:hover {
+.service-card {
+  background: var(--white-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
   transform: translateY(-5px);
+  background: white;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .service-icon {
-  color: var(--main-color);
+  color: var(--primaryBlue-color);
+  margin-bottom: 1.5rem;
+}
+
+.service-title {
+  color: var(--darkBlue-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.service-subtitle {
+  color: var(--darkBlue2-color);
   margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.service-details {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .service-details ul {
@@ -218,20 +245,9 @@ body{
 }
 
 .service-details li {
+  color: var(--lightGrey5-color);
   margin-bottom: 1rem;
-}
-
-.ideal-for li {
-  position: relative;
-  padding-left: 1.5rem;
   line-height: 1.5;
-}
-
-.ideal-for li:before {
-  content: "•";
-  color: var(--main-color);
-  position: absolute;
-  left: 0;
 }
 
 /* scroll bar */
