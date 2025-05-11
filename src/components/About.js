@@ -43,7 +43,6 @@ const About = () => {
           </Paragraph>
         </div>
       </section>
-      <MissionVision />
       <div className="container py-5">
         <div className="pt-5">
           <Paragraph className=" title-blue ">Company Overview</Paragraph>
@@ -68,6 +67,7 @@ const About = () => {
               </Paragraph>
             </div>
           </div>
+          <MissionVision />
         </div>
         <Supporters padding={"pt-5"} hr={false} />
       </div>
