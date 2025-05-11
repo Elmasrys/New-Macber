@@ -39,7 +39,7 @@ const About = () => {
       <section className="py_7 backGround_trans">
         <div className="container py-xl-5 text-center  ">
           <Paragraph className="text-quote font-lg">
-            “We Are Thinkers , Designers & Creative Technologists”
+            "We Are Builders, Strategists, and Impact-Driven Technologists"
           </Paragraph>
         </div>
       </section>
