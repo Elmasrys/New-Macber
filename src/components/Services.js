@@ -143,26 +143,40 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="why-macber mt-5 py-5 backGround_light rounded">
-          <h2 className="darkBlue bold-700 mb-4">Why Work With Macber?</h2>
-          <div className="row g-4 px-4">
-            <div className="col-md-4">
-              <div className="benefit">
-                <h4 className="lightBlue3 bold-600">✅ Global-Quality Talent</h4>
-                <p className="lightGrey5">Our teams combine engineering excellence with product thinking.</p>
+        <div className="why-macber mt-5 py-5">
+          <div className="text-center mb-5">
+            <h2 className="darkBlue bold-700">Why Work With Macber?</h2>
+            <div className="title-underline"></div>
+          </div>
+          <div className="benefits-grid">
+            <div className="benefit-card">
+              <div className="benefit-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#2c60f4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 17L12 22L22 17" stroke="#2c60f4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 12L12 17L22 12" stroke="#2c60f4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
+              <h4 className="lightBlue3 bold-600">Global-Quality Talent</h4>
+              <p className="lightGrey5">Our teams combine engineering excellence with product thinking.</p>
             </div>
-            <div className="col-md-4">
-              <div className="benefit">
-                <h4 className="lightBlue3 bold-600">✅ Modular Engagement Models</h4>
-                <p className="lightGrey5">From full outsourcing to hybrid squads and on-site support.</p>
+            <div className="benefit-card">
+              <div className="benefit-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <path d="M17 3C17.2626 2.73735 17.5744 2.52901 17.9176 2.38687C18.2608 2.24473 18.6286 2.17157 19 2.17157C19.3714 2.17157 19.7392 2.24473 20.0824 2.38687C20.4256 2.52901 20.7374 2.73735 21 3C21.2626 3.26264 21.471 3.57444 21.6131 3.9176C21.7553 4.26077 21.8284 4.62856 21.8284 5C21.8284 5.37143 21.7553 5.73923 21.6131 6.08239C21.471 6.42555 21.2626 6.73735 21 7L7.5 20.5L2 22L3.5 16.5L17 3Z" stroke="#2c60f4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
+              <h4 className="lightBlue3 bold-600">Modular Engagement Models</h4>
+              <p className="lightGrey5">From full outsourcing to hybrid squads and on-site support.</p>
             </div>
-            <div className="col-md-4">
-              <div className="benefit">
-                <h4 className="lightBlue3 bold-600">✅ Regionally Grounded, Globally Aligned</h4>
-                <p className="lightGrey5">Deep experience across MENA with delivery hubs in the UK, Egypt, KSA, and UAE.</p>
+            <div className="benefit-card">
+              <div className="benefit-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 21H21M3 10H21M3 6L12 3L21 6M12 21V10" stroke="#2c60f4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
+              <h4 className="lightBlue3 bold-600">Regionally Grounded, Globally Aligned</h4>
+              <p className="lightGrey5">Deep experience across MENA with delivery hubs in the UK, Egypt, KSA, and UAE.</p>
             </div>
           </div>
         </div>
