@@ -8,6 +8,7 @@ import TeamTestimonials from "./aboutSection/TeamTestimonials";
 import TeamGallery from "./aboutSection/TeamGallery";
 import MainHeaderWrapper from "../Layout/MainHeaderWrapper";
 import OurOffices from "../components/aboutSection/OurOffices";
+import MissionVision from "./aboutSection/MissionVision";
 import Counter from "../UI/Counter";
 import { useForm } from "../context/ContextForm";
 import { useState } from "react";
@@ -42,6 +43,7 @@ const About = () => {
           </Paragraph>
         </div>
       </section>
+      <MissionVision />
       <div className="container py-5">
         <div className="pt-5">
           <Paragraph className=" title-blue ">Company Overview</Paragraph>
