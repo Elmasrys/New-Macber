@@ -9,8 +9,8 @@ const WhatWeDo = () => {
     <section className="py-5">
       <BackGroundLight>
         <div className="container py-5">
-          <SectionTitle sectTilte={"What We Do"} className="text-center" />
-          <div className={styles.service_grid}>
+          <SectionTitle sectTilte={"What We Do"} className="text-center mb-5" />
+          <div className="row g-4">
             <div className="col-lg-4 col-md-12">
               <div className={styles.service_card}>
                 <SectionTitle sectTilte={"Macber Studio"} className="mb-3" />

@@ -3,19 +3,11 @@
 }
 
 .section_container {
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .section_title {
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.service_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
+    margin-bottom: 4rem;
 }
 
 .service_card {
