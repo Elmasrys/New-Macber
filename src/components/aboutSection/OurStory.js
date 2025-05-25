@@ -18,24 +18,21 @@ const OurStory = (props) => {
       </div>
       <div className=" Value-macber-desktop">
         <div className="row g-0">
-          <div className="col-8">
+          <div className="col-12">
             <div className=" row g-0 ">
               <div className="col-6">
                 <CardValue
-                  alt={"macber-Innovation"}
-                  HeadOne={`Innovation`}
-                  DescOne={` We are dedicated to pushing the boundaries of
-              technology, creating software solutions that are not just
-              functional but truly innovative, unique, and valuable.`}
+                  alt={"macber-Context-Is-Critical"}
+                  HeadOne={`Context Is Critical`}
+                  DescOne={`Our presence across MENA means we understand the nuances regulatory, cultural, operational of scaling digital products in the region.`}
                   srcOne={Innovation}
                 />
               </div>
               <div className="col-6">
                 <CardValue
-                  alt={"macber-Quality"}
-                  HeadOne={`Quality`}
-                  DescOne={`
-              We value delivering software solutions characterized by exceptional quality, reliability, and durability.`}
+                  alt={"macber-Technology-Is-a-Growth-Lever"}
+                  HeadOne={`Technology Is a Growth Lever`}
+                  DescOne={`We help businesses use technology not as a cost center, but as a driver of profitability, scale, and strategic advantage.`}
                   srcOne={Quality}
                 />
               </div>
@@ -43,68 +40,64 @@ const OurStory = (props) => {
             <div className=" row g-0">
               <div className="col-6">
                 <CardValue
-                  alt={"macber-Experience"}
-                  HeadOne={`Customer Experience`}
+                  alt={"macber-people-come-first"}
+                  HeadOne={`People Come First`}
                   DescOne={`
-                We believe that building strong relationships and delivering
-                exceptional value to our clients is essential to remarkable
-                customer experience.`}
+               Whether it’s our clients, teams, or end-users we build human-centric experiences, not just systems.`}
                   srcOne={Experience}
                 />
               </div>
               <div className="col-6">
                 <CardValue
-                  alt={"macber-Collaboration"}
+                  alt={"macber-Speed-Matters"}
                   HeadOne={`Collaboration`}
-                  DescOne={`
-                We work intimately with our clients, partners, and stakeholders to
-                develop customized solutions that meet their unique needs.`}
+                  DescOne={`In a competitive digital world, execution speed is a differentiator. We structure our teams and workflows to move fast, without compromising quality.`}
                   srcOne={Collaboration}
                 />
               </div>
             </div>
           </div>
-          <div className="col-4">
-            <CardValue
-              alt={"macber-Creativity"}
-              HeadOne={`  Creativity`}
-              DescOne={` We value creativity and encourages our team to think outside the
-                box. We are fueled with imaginative solutions that enhance the
-                human experience.`}
-              srcOne={Creativity}
-            />
-          </div>
-          <div className="col-8">
-            <CardValue
-              alt={"macber-Flexibility"}
-              HeadOne={`Flexibility`}
-              DescOne={`  We are committed to being flexible and adaptable to ensure we
-                can deliver solutions that are tailored to clients' needs.`}
-              srcOne={Flexibility}
-            />
-          </div>
-          <div className="col-4">
-            <CardValue
-              classNameTitle={"small-title"}
-              classNameDesc={"small-desc"}
-              alt={"macber-Integrity"}
-              HeadOne={`Integrity`}
-              DescOne={`  We operate with the highest standards of ethics and integrity.
-                We believe in honesty, transparency, and fairness in all their
-                business dealing`}
-              srcOne={Integrity}
-            />
-            <CardValue
-              classNameTitle={"small-title"}
-              classNameDesc={"small-desc"}
-              alt={"macber-Growth"}
-              HeadOne={`Growth`}
-              DescOne={`  We invest in the professional development of our teams and
-                continuously evaluate and improve their processes to ensure they
-                are always delivering the best possible value to clients.`}
-              srcOne={Growth}
-            />
-          </div>
+          {/*<div className="col-4">*/}
+          {/*  <CardValue*/}
+          {/*    alt={"macber-Creativity"}*/}
+          {/*    HeadOne={`  Creativity`}*/}
+          {/*    DescOne={` We value creativity and encourages our team to think outside the*/}
+          {/*      box. We are fueled with imaginative solutions that enhance the*/}
+          {/*      human experience.`}*/}
+          {/*    srcOne={Creativity}*/}
+          {/*  />*/}
+          {/*</div>*/}
+          {/*<div className="col-8">*/}
+          {/*  <CardValue*/}
+          {/*    alt={"macber-Flexibility"}*/}
+          {/*    HeadOne={`Flexibility`}*/}
+          {/*    DescOne={`  We are committed to being flexible and adaptable to ensure we*/}
+          {/*      can deliver solutions that are tailored to clients' needs.`}*/}
+          {/*    srcOne={Flexibility}*/}
+          {/*  />*/}
+          {/*</div>*/}
+          {/*<div className="col-4">*/}
+          {/*  <CardValue*/}
+          {/*    classNameTitle={"small-title"}*/}
+          {/*    classNameDesc={"small-desc"}*/}
+          {/*    alt={"macber-Integrity"}*/}
+          {/*    HeadOne={`Integrity`}*/}
+          {/*    DescOne={`  We operate with the highest standards of ethics and integrity.*/}
+          {/*      We believe in honesty, transparency, and fairness in all their*/}
+          {/*      business dealing`}*/}
+          {/*    srcOne={Integrity}*/}
+          {/*  />*/}
+          {/*  <CardValue*/}
+          {/*    classNameTitle={"small-title"}*/}
+          {/*    classNameDesc={"small-desc"}*/}
+          {/*    alt={"macber-Growth"}*/}
+          {/*    HeadOne={`Growth`}*/}
+          {/*    DescOne={`  We invest in the professional development of our teams and*/}
+          {/*      continuously evaluate and improve their processes to ensure they*/}
+          {/*      are always delivering the best possible value to clients.`}*/}
+          {/*    srcOne={Growth}*/}
+          {/*  />*/}
+          {/*</div>*/}
         </div>
       </div>
 
