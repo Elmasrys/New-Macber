@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
-import logoLight from '../assets/icons/Logo_light.svg';
-import logoDark from '../assets/icons/Logo_blue.svg';
+import logoLight from '../assets/icons/Logo-Macber-White.png';
+import logoDark from '../assets/icons/logo-Macber-Colored.png';
 import Logo from '../UI/Logo';
 import { useAnimate, stagger } from "framer-motion";
 import { MenuToggle } from "../UI/MenuToggle";

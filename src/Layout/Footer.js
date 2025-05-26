@@ -1,6 +1,6 @@
 import { useNavigate  ,Link} from "react-router-dom";
 import classes from './Footer.module.css';
-import logo from '../assets/icons/Logo_light.svg';
+import logo from '../assets/icons/Logo-Macber-White.png';
 import Paragraph from "../UI/Paragraph";
 import facebookIcon from '../assets/icons/facebook_icon.svg';
 import twitterIcon from '../assets/icon/Instgram.svg';
