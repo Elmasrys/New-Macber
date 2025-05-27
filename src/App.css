@@ -7,8 +7,8 @@ body{
 :root{
   --main-font: 'Lexend', sans-serif;
   --babyBlue-color: #69DEEF;
-  --primaryBlue-color: #2C60F2;
-  --secBlue-color: #102EA8;
+  --primaryBlue-color: #07174C;
+  --secBlue-color: #1034A6;
   --darkGreen-color: #3F484A;
   --lightGrey-color: #E5E5E5;
   --lightBlue-color: #F4F7FE;
@@ -31,6 +31,8 @@ body{
   --desktopWidth: 6/-6;
   --tabletWidth: 4/-4;
   --mainWidth: 6/-6;
+  --stage-color: #2C60F4;
+  --amplify-color: #EB5B63;
 }
 .bg_blue_main{
   background-color: var(--blue_dark_color);
