@@ -17,7 +17,7 @@
     
 }
 .ex-btn .active{
-    color: blue !important;
+    color: var(--stage-color) !important;
 }
 .jobSummary{
     max-width: 22rem;
