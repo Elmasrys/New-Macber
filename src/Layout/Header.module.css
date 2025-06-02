@@ -37,7 +37,7 @@
     will-change: transform;    
 }
 .stickey_header.stickey_fixed .nav_link span::after{
-    background-color: var(--primaryBlue-color);   
+    background-color: var(--stage-color);
 }
 
 /* stickey-header */
