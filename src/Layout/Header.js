@@ -227,7 +227,7 @@ const Header = () => {
                   alt="macber_logo"
                   loading="lazy"
                   width="100%"
-                  style={{ width: "300px" }}
+                  style={{ width: "200px" }}
                 onClick={(e)=>setIsActiving(!isActiving)}
 
                 />

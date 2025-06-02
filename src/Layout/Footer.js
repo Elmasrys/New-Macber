@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="mb-4 ">
             <img
               src={logo}
-              style={{ width: "300px" }}
+              style={{ width: "200px" }}
               alt="macber_logo"
               type="img"
             />

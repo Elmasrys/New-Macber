@@ -6,17 +6,17 @@
 }
 .btn-white-case {
     background-color: var(--white-color);
-    color: var( --blue_dark_color);
+    color: var( --secBlue-color);
     border: 1px solid var(--primaryBlue-color);
 }
 
 .btn-white:hover,
 .btn-white:focus,
 .btn-white:active {
-    background-color:var( --blue_dark_color);
+    background-color:var( --secBlue-color);
     color: var(--white-color);
     border: 1px solid var(--primaryBlue-color);
-    box-shadow: initial 0 -4em 0 0 var( --blue_dark_color);
+    box-shadow: initial 0 -4em 0 0 var( --secBlue-color);
 }
 .Card{
     display: block;
@@ -25,7 +25,7 @@
     display: none;
 }
 .border-blue{
-    border:  1px solid var(--blue_dark_color) !important;
+    border:  1px solid var(--secBlue-color) !important;
 }
 .recent_projects,
 .works_projects{

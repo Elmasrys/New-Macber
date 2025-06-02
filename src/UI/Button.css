@@ -12,7 +12,7 @@
 }
 .btn-white{
     background-color: var(--white-color);
-    color: var(--blue_dark_color);
+    color: var(--secBlue-color);
     /* padding: 1rem 1.6rem !important; */
 }
 .btn-white-two{
@@ -28,13 +28,13 @@
 .btn-white-two:focus,
 .btn-white-two:active {
     background-color: var(--white-color);
-    color: var(--blue_dark_color);
+    color: var(--secBlue-color);
 }
 .btn-white:hover,
 .btn-white:focus,
 .btn-white:active {
     background-color: var(--white-color);
-    color: var(--blue_dark_color);
+    color: var(--secBlue-color);
 }
 .btn-blue{
     background-color: var(--primaryBlue-color);
@@ -68,7 +68,7 @@
     color: var(--lightWhite-color);
 }
 .btnCard{
-    color: var(--blue_dark_color);
+    color: var(--secBlue-color);
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 700;

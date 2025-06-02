@@ -20,11 +20,12 @@ body{
   --lightBlue2-color: #F9F9FC;
   --lightGrey3-color:#f3f3ee87;
   --lightGrey4-color:#9aa3a5;
-  --darkBlue2-color: #001550;
+  --darkBlue2-color: #07174C;
   --lightBlue3-color: #0E4FE3;
   --lightBlu4-color: #F9F9F9;
   --lightGrey5-color: #6F797A;
   --lightGrey6-color: #D4D4D4;
+  --blue_dark_color:#0E4FE3;
   --blue_dark_color:#0E4FE3;
   --New_blue:#01174F;
   /* grid */
@@ -63,7 +64,7 @@ body{
   color: var(--lightBlue-color);
 }
 .lightBlue3{
-  color: var(--lightBlue3-color) !important;
+  color: var(--stage-color) !important;
 }
 .darkBlue{
   color: var(--darkBlue-color) !important;
