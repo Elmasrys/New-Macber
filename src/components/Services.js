@@ -262,7 +262,7 @@ const Services = () => {
 
   return (
     <div className="overflow">
-        <MainHeaderWrapper bg={bg} height="38rem" animate={true}>
+        <MainHeaderWrapper bg={bg} height="38rem" animate={false}>
                 <SectionHeader
                   bg={bg}
                   titleName="w-70"

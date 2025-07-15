@@ -15,15 +15,15 @@ const Footer = () => {
     <footer>
       <div className="container py_5">
         <div className="d-flex flex-column justify-content-center align-items-center">
-          <div className="mb-4 ">
+          <div className="mb-4 mt-3">
             <img
               src={logo}
               style={{ width: "200px" }}
               alt="macber_logo"
               type="img"
+            
             />
           </div>
-          <div></div>
           {/* <Link to="/contact-us" className={classes.btn_contact}>
             Contact us
           </Link> */}
