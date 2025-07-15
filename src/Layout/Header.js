@@ -113,30 +113,32 @@ const Header = () => {
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg justify-content-lg-center justify-content-between ${classes.navbar
+        className={`navbar navbar-expand-lg justify-content-lg-center ${classes.navbar
           } 
           ${isStrickyFixed
             ? `${classes.stickey_header} ${classes.stickey_fixed}`
             : ""
           }`}
       >
-        <NavLink className="navbar-brand d-block d-lg-none m-0" to={"/"}>
-          <img
-            src={isStrickyFixed ? logoDark : logoLight}
-            alt="macber_logo"
-            loading="lazy"
-            width="100%"
-            style={{ width: "240px" }}
-          />
-        </NavLink >
-        <div ref={scope} className={`navbar-toggler p-0`}>
-          <MenuToggle
-            toggle={() => {
-              setIsOpen(!isOpen);
-            }}
-            stroke={isStrickyFixed}
-          />
-          <MenuNav onClick={reset} />
+        <div className="d-flex justify-content-between align-items-center w-100 d-lg-none">
+          <NavLink className="navbar-brand m-0" to={"/"}>
+            <img
+              src={isStrickyFixed ? logoDark : logoLight}
+              alt="macber_logo"
+              loading="lazy"
+              width="100%"
+              style={{ width: "180px" }}
+            />
+          </NavLink>
+          <div ref={scope} className={`navbar-toggler p-0`}>
+            <MenuToggle
+              toggle={() => {
+                setIsOpen(!isOpen);
+              }}
+              stroke={isStrickyFixed}
+            />
+            <MenuNav onClick={reset} />
+          </div>
         </div>
         <div
           className="collapse navbar-collapse justify-content-center"

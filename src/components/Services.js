@@ -1,192 +1,317 @@
-import React from 'react';
+  import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { FaTheaterMasks, FaCode, FaBullhorn, FaArrowRight, FaCheck } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import './services.css';
+import MainHeaderWrapper from '../Layout/MainHeaderWrapper';
 import SectionHeader from '../Layout/SectionHeader';
 import bg from '../assets/New/service-bg.jpg';
-import MainHeaderWrapper from '../Layout/MainHeaderWrapper';
-import { FaUsers, FaLaptopCode, FaRegCalendarCheck, FaCircle, FaArrowRight } from 'react-icons/fa';
-import './services.css';
-import { Link } from 'react-router-dom';
+import Jarallax from './homeSections/Jarallax';
 
-const ServiceCard = ({ title, subtitle, description, services, idealFor, icon: Icon, iconColor }) => (
-  <div className="service-card">
-    <div className="service-header">
-      <div className="icon-wrapper" style={{ color: iconColor }}>
-        <Icon />
-      </div>
-      <div className="service-title-area">
-        <h3>{title}</h3>
-        <p>{subtitle}</p>
+const ServiceCard = ({ title, subtitle, description, services, idealFor, icon: Icon, accentColor, imageUrl }) => {
+  // Define icon colors based on service type
+  const getIconColor = () => {
+    if (accentColor === "#EB5B63") return "#EB5B63"; // Amplify
+    if (accentColor === "#2C60F4") return "#2C60F4"; // Stage
+    if (accentColor === "#07174C") return "#07174C"; // Studio
+    return accentColor;
+  };
+
+  // Determine which service type this is based on accentColor
+  const getServiceType = () => {
+    if (accentColor === "#EB5B63") return "amplify";
+    if (accentColor === "#2C60F4") return "stage";
+    if (accentColor === "#07174C") return "studio";
+    return "";
+  };
+
+  // Determine if we should reverse the layout (image right, text left)
+  const isReversedLayout = getServiceType() === "stage"; // Second card (Stage) will have reversed layout
+  
+  // Image Column
+  const ImageColumn = () => (
+    <div className="col-md-4 mt-5">
+      <div className="service-image-container">
+        <div className="service-image">
+          <img src={imageUrl} alt={title} />
+          <div className="service-image-overlay">
+            <div className="service-icon" style={{ backgroundColor: getIconColor() }}>
+              <Icon size={36} />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    
-    <p className="service-description">{description}</p>
-    
-    <div className="service-content">
-      <div className="service-section">
-        <div className="section-header">
-          <FaCircle size={8} style={{ color: iconColor }} />
-          <h4>Key Services:</h4>
+  );
+
+  // Content Column
+  const ContentColumn = () => (
+    <div className="col-md-8">
+      <div className="p-4 p-md-5">
+        <h3 className="mb-2 text-center" style={{ color: getIconColor(), fontWeight: '700', fontSize:'1.5rem' }}>{title}</h3>
+        <p className="text-muted fst-italic mb-4 text-center" style={{ fontSize:'1rem' , color: '#6F797A'}}>{subtitle}</p>
+        <p className="mb-4 text-center" style={{ color: '#6F797A', fontSize:'1rem'  }}>{description}</p>
+        
+        <div className="row">
+          <div className="col-md-6">
+            <div className="mb-4">
+              <h5 className="h6 mb-3 fw-bold d-flex align-items-center" style={{ color: '#0D1F2D' }}>
+                <span className="me-2" style={{ 
+                  width: '3px', 
+                  height: '18px', 
+                  backgroundColor: getIconColor(), 
+                  display: 'inline-block' 
+                }}></span>
+                Key Services
+              </h5>
+              <ul className="list-unstyled mb-0 service-list">
+                {services.map((service, index) => (
+                  <li key={index} className="mb-2 d-flex align-items-start">
+                    <FaCheck className="me-2 flex-shrink-0 mt-1" style={{ color: getIconColor(), fontSize: '14px' }} />
+                    <span style={{ color: '#555', fontSize: '14px' }}>{service.title}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          
+          <div className="col-md-6">
+            <div>
+              <h5 className="h6 mb-3 fw-bold d-flex align-items-center" style={{ color: '#0D1F2D' }}>
+                <span className="me-2" style={{ 
+                  width: '3px', 
+                  height: '18px', 
+                  backgroundColor: getIconColor(), 
+                  display: 'inline-block' 
+                }}></span>
+                Ideal For
+              </h5>
+              <ul className="list-unstyled mb-0">
+                {idealFor.map((item, index) => (
+                  <li key={index} className="mb-2 d-flex align-items-start">
+                    <FaCheck className="me-2 flex-shrink-0 mt-1" style={{ color: getIconColor(), fontSize: '14px' }} />
+                    <span style={{ color: '#555', fontSize: '14px' }}>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
-        <ul className="service-list">
-          {services.map((service, index) => (
-            <li key={index}>
-              <h5>{service.title}</h5>
-              <p>{service.description}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
-      
-      <div className="service-section">
-        <div className="section-header">
-          <FaCircle size={8} style={{ color: iconColor }} />
-          <h4>Ideal For:</h4>
-        </div>
-        <ul className="ideal-list">
-          {idealFor.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
       </div>
     </div>
-  </div>
-);
+  );
+
+  return (
+    <div 
+      className="service-card rounded-4 overflow-hidden" 
+      data-service={getServiceType()}
+      style={{ 
+        backgroundColor: '#FFFFFF',
+        boxShadow: '0 10px 30px rgba(0, 0, 0, 0.08)',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+      }}>
+      <div className="row g-0">
+        {/* Conditional rendering based on layout direction */}
+        {!isReversedLayout ? (
+          // Default layout: Image left, text right
+          <>
+            <ImageColumn />
+            <ContentColumn />
+          </>
+        ) : (
+          // Reversed layout: Text left, image right
+          <>
+            <ContentColumn />
+            <ImageColumn />
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
 
 const Services = () => {
   const servicesData = {
     amplify: {
       title: "Macber Amplify",
-      subtitle: "Agile Teams. Enterprise Delivery. Startup Agility.",
-      description: "Macber Amplify provides dedicated development teams and specialized talent to extend your technical capacity. Whether you're launching a new product or scaling an existing one, we help you move faster—with flexibility and focus.",
+      subtitle: "Agile Teams and Engineering Talent to Scale Product Delivery",
+      description: "Amplify takes the headache out of technology talent acquisition with pre-vetted developers, designers, and product managers who can scale up your delivery capabilities immediately.",
       services: [
         {
-          title: "Dedicated Development Teams",
-          description: "End-to-end squads tailored to your product vision—engineers, designers, PMs, QA, and more."
+          title: "Dedicated product development teams",
+          description: "Fully managed teams of engineers, designers, and PMs."
         },
         {
-          title: "Staff Augmentation",
-          description: "Add high-performing developers, DevOps, or data experts to your existing teams."
+          title: "Autonomous agile pods",
+          description: "Self-contained teams with full delivery ownership."
         },
         {
-          title: "Agile Pods",
-          description: "Fully autonomous agile teams that take ownership of delivery and velocity."
+          title: "Staff augmentation",
+          description: "Engineering, DevOps, AI, and data specialists to fill specific skill gaps."
+        },
+        {
+          title: "Embedded team integration",
+          description: "Seamless integration into client environments for cohesive collaboration."
+        },
+        {
+          title: "Sprint-based execution",
+          description: "Agile delivery with continuous integration and deployment."
+        },
+        {
+          title: "Long-term product evolution",
+          description: "Sustained partnerships for ongoing product development and refinement."
         }
       ],
       idealFor: [
-        "Startups building MVPs or scaling",
-        "Enterprises needing rapid team expansion",
-        "Product teams that need delivery muscle without overhead"
+        "Startups building MVPs or scaling quickly",
+        "Enterprises needing fast team expansion",
+        "Product teams seeking delivery acceleration without added overhead"
       ],
-      icon: FaUsers,
+      icon: FaBullhorn,
       iconColor: '#eb5b63'
     },
     stage: {
       title: "Macber Stage",
-      subtitle: "Next-Gen Event Technology for Memorable Experiences",
-      description: "Macber Stage helps organizers digitize, streamline, and elevate their events—whether physical, virtual, or hybrid. Our robust infrastructure and experiential tech turn events into seamless, engaging experiences.",
+      subtitle: "Next-Gen Event Technology for Physical, Hybrid, and Virtual Experiences",
+      description: "Stage delivers the technology backbone for unforgettable events—from custom registration platforms to immersive AR/VR experiences that captivate audiences.",
       services: [
         {
-          title: "Event Registration Platform",
-          description: "Custom-branded registration, ticketing, and attendee management built for scale."
+          title: "Custom-branded registration",
+          description: "Registration and ticketing platforms tailored to your event needs."
         },
         {
-          title: "Event Operations & Support",
-          description: "Real-time dashboards, badge printing, on-site support, and tech staffing for reliable execution."
+          title: "Attendee management systems",
+          description: "Comprehensive solutions for large-scale event management."
         },
         {
-          title: "AR/VR & Experiential Tech",
-          description: "Immersive installations, virtual booths, and gamified experiences that create lasting impressions."
+          title: "AR/VR-powered activations",
+          description: "Immersive virtual booths and interactive experiences."
+        },
+        {
+          title: "Gamified installations",
+          description: "Experiential tech that creates memorable engagements."
+        },
+        {
+          title: "Real-time dashboards",
+          description: "Event operations and analytics for actionable insights."
+        },
+        {
+          title: "On-site support systems",
+          description: "Badge printing, check-in systems, and technical support."
+        },
+        {
+          title: "Technical staffing",
+          description: "Logistics coordination and on-the-ground technical expertise."
         }
       ],
       idealFor: [
         "Conferences, expos, and festivals",
-        "Government and enterprise events",
-        "Agencies producing branded experiences"
+        "Government and enterprise-scale events",
+        "Creative agencies producing branded activations"
       ],
-      icon: FaRegCalendarCheck,
+      icon: FaTheaterMasks,
       iconColor: '#2c60f4'
     },
     studio: {
       title: "Macber Studio",
-      subtitle: "Intelligent Software, Tailored to You",
+      subtitle: "Custom Software, Automation, and Digital Product Development",
       description: "Macber Studio is your full-service product development partner. We design, engineer, and scale custom digital solutions—powered by automation, AI, and clean UX.",
       services: [
         {
-          title: "AI Development & Automation",
-          description: "Build intelligent systems that reduce manual work and optimize decision-making."
+          title: "Web, mobile, and enterprise software",
+          description: "Comprehensive development for all platforms and business needs."
         },
         {
-          title: "Custom Software Development",
-          description: "Web, mobile, and enterprise-grade platforms—from architecture to deployment."
+          title: "AI development and automation",
+          description: "Intelligent solutions that optimize operations and decision-making."
         },
         {
-          title: "SaaS Platform Engineering",
-          description: "Design and scale cloud-native SaaS products with modular architecture and multi-tenant support."
+          title: "SaaS platform engineering",
+          description: "Modular, multi-tenant architecture for scalable cloud applications."
         },
         {
-          title: "UI/UX Design",
-          description: "Beautiful, intuitive interfaces that improve user satisfaction and engagement."
+          title: "UX/UI design",
+          description: "Intuitive digital product interfaces that enhance user satisfaction."
+        },
+        {
+          title: "Backend systems and APIs",
+          description: "Robust cloud deployment and infrastructure solutions."
+        },
+        {
+          title: "MVP prototyping",
+          description: "Rapid product iterations to validate concepts and gain market traction."
         }
       ],
       idealFor: [
         "Businesses undergoing digital transformation",
         "Product companies building AI-powered tools",
-        "Organizations seeking to streamline operations through automation"
+        "Organizations aiming to automate and optimize operations"
       ],
-      icon: FaLaptopCode,
+      icon: FaCode,
       iconColor: '#07174C'
     }
   };
   
-  return (
-    <>
-      <div className="overflow">
-        <MainHeaderWrapper bg={bg} height="45rem" animate={true}>
-          <SectionHeader
-            titleName="w-80"
-            title="Strategic Technology Solutions Built for Scale"
-            desc="At Macber, we don't just build software—we partner with you to create impact. Through our three specialized verticals, we offer comprehensive digital services that help you scale your business, optimize operations, and innovate faster."
-            callToActionOne="Talk to us"
-            classNameOne="px_btn animate__animated animate__fadeInUp"
-            to="/contact-us"
-          />
-        </MainHeaderWrapper>
-      </div>
-      
-      <div className="services-section">
-        <div className="container">
-          <div className="section-title-container">
-            <h2>Our Services</h2>
-            <div className="title-line"></div>
-          </div>
-          
-          <div className="services-grid">
-            {Object.values(servicesData).map((service, index) => (
-              <div key={index} className="service-item">
-                <ServiceCard {...service} />
-              </div>
-            ))}
-          </div>
-          
-        </div>
-      </div>
+  // Image URLs for the services
+  const serviceImages = {
+    amplify: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    stage: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1411&q=80',
+    studio: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  };
 
-      {/* Get In Touch Banner */}
-      <div className="get-in-touch-banner">
-        <div className="container">
-          <div className="banner-content">
-            <div className="banner-text">
-              <h2>Ready to Start Your Project?</h2>
-              <p>Let's discuss how Macber can help you achieve your business goals with tailored technology solutions.</p>
-            </div>
-            <div className="banner-action">
-              <Link to="/contact-us" className="contact-btn">
-                Get in Touch <FaArrowRight className="arrow-icon" />
-              </Link>
-            </div>
-          </div>
-        </div>
+  return (
+    <div className="overflow">
+        <MainHeaderWrapper bg={bg} height="38rem" animate={true}>
+                <SectionHeader
+                  bg={bg}
+                  titleName="w-70"
+                  title={"Unlocking Digital Possibilities"}
+                  classNameOne={"px_btn"}
+                  callToActionOne={"TALK TO US"}
+                  to={'/contact-us'}
+                />
+              </MainHeaderWrapper>
+      <Container className="py-5">
+       
+        
+        {/* Service Cards - One per row */}
+        <Row className="mb-5">
+          <Col lg={12} className="mb-4">
+            <ServiceCard 
+              {...servicesData.amplify} 
+              accentColor="#EB5B63"
+              imageUrl={serviceImages.amplify}
+            />
+          </Col>
+          
+          <Col lg={12} className="mb-4">
+            <ServiceCard 
+              {...servicesData.stage} 
+              accentColor="#2C60F4"
+              imageUrl={serviceImages.stage}
+            />
+          </Col>
+          
+          <Col lg={12}>
+            <ServiceCard 
+              {...servicesData.studio} 
+              accentColor="#07174C"
+              imageUrl={serviceImages.studio}
+            />
+          </Col>
+        </Row>
+        
+    
+      </Container>
+      <div className="container-fluid p-0 m-0">
+        <Row className="g-0">
+          <Col lg={12}>
+          <Jarallax />
+          </Col>
+        </Row>
       </div>
-    </>
+    </div>
   );
 };
 
