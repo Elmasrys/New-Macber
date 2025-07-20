@@ -35,9 +35,9 @@ const ServiceCard = ({ title, subtitle, description, services, idealFor, icon: I
         <div className="service-image">
           <img src={imageUrl} alt={title} />
           <div className="service-image-overlay">
-            <div className="service-icon" style={{ backgroundColor: getIconColor() }}>
+            {/* <div className="service-icon" style={{ backgroundColor: getIconColor() }}>
               <Icon size={36} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
