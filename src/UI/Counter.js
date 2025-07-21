@@ -34,7 +34,7 @@ const Counter = (props)=>{
                         <Paragraph className={props.classNameForText}>Clients</Paragraph>
                     </div>
                 </div>
-                <div className={`${props.flex_cols} ${props.border_type}`}>
+                {/* <div className={`${props.flex_cols} ${props.border_type}`}>
                     <div className={`${props.flex_box} ${props.padding}`}>
                         <Paragraph className={props.classNameForCounter}>
                             <CountUp 
@@ -47,8 +47,8 @@ const Counter = (props)=>{
                         </Paragraph>
                         <Paragraph className={props.classNameForText}>Team</Paragraph>
                     </div>
-                </div>
-                <div className={`${props.flex_cols} ${props.border_type}`}>
+                </div> */}
+                <div className={`${props.flex_cols}`}>
                     <div className={`${props.flex_box} ${props.padding}`}>
                         <Paragraph className={props.classNameForCounter}>
                             <CountUp 
