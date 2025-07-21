@@ -13,7 +13,7 @@ const Counter = (props)=>{
                                 start={100} 
                                 end={1250} 
                                 duration={3} 
-                                enableScrollSpy={true} 
+                                enableScrollSpy={true   } 
                                 scrollSpyDelay={2}>
                             </CountUp>+
                         </Paragraph>
@@ -53,7 +53,7 @@ const Counter = (props)=>{
                         <Paragraph className={props.classNameForCounter}>
                             <CountUp 
                                 start={0} 
-                                end={9} 
+                                end={10} 
                                 duration={3} 
                                 enableScrollSpy={true} 
                                 scrollSpyDelay={2}>

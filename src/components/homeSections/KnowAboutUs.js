@@ -8,7 +8,7 @@ const KnowAbotUS = () => {
         <div className="row align-items-center  flex-lg-row flex-column-reverse">
           <div className="col-xl-7 col-lg-7 col-md-12 col-sm-12 ">
             <SectionTitle
-              sectTilte={"Accelerate Innovation Deliver at Scale."}
+              sectTilte={"Accelerate Innovation. Deliver at Scale."}
               className="mb-3"
             />
             <div className="">
