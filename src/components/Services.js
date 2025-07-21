@@ -164,7 +164,6 @@ const Services = () => {
         }
       ],
       idealFor: [
-        "Startups building MVPs or scaling quickly",
         "Enterprises needing fast team expansion",
         "Product teams seeking delivery acceleration without added overhead"
       ],
@@ -173,7 +172,7 @@ const Services = () => {
     },
     stage: {
       title: "Macber Stage",
-      subtitle: "Next-Gen Event Technology for Physical, Hybrid, and Virtual Experiences",
+      subtitle: "Custom-branded registration, ticketing, attendee management",
       description: "Stage delivers the technology backbone for unforgettable events—from custom registration platforms to immersive AR/VR experiences that captivate audiences.",
       services: [
         {
@@ -257,7 +256,7 @@ const Services = () => {
   const serviceImages = {
     amplify: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     stage: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1411&q=80',
-    studio: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    studio: 'https://images.unsplash.com/photo-1510074377623-8cf13fb86c08?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   };
 
   return (

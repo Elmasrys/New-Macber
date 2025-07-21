@@ -8,15 +8,15 @@ const KnowAbotUS = () => {
         <div className="row align-items-center  flex-lg-row flex-column-reverse">
           <div className="col-xl-7 col-lg-7 col-md-12 col-sm-12 ">
             <SectionTitle
-              sectTilte={"Experience the Macber Advantage"}
+              sectTilte={"Accelerate Innovation Deliver at Scale."}
               className="mb-3"
             />
             <div className="">
               <div className="mb-3">
-                <SectionTitle
+                {/* <SectionTitle
                   className="bold-400 darkBlue"
                   sectTilte={"Accelerate Innovation. Unlock Efficiency. Deliver at Scale."}
-                />
+                /> */}
                 <Paragraph className="desc-black w-80 my-2 t_just">
                   We help ambitious organizations build, scale, and optimize their digital capabilities. 
                   From deploying top-tier engineering teams to developing AI-powered products 

@@ -203,6 +203,20 @@ const Header = () => {
                 <span>Services</span>
               </NavLink>
             </li>
+           
+            <li className="nav-item px-xl-4 px-3">
+              <NavLink className="navbar-brand d-block-md" to={"/"}>
+                <img
+                  src={isStrickyFixed ? logoDark : logoLight}
+                  alt="macber_logo"
+                  loading="lazy"
+                  width="100%"
+                  style={{ width: "200px" }}
+                onClick={(e)=>setIsActiving(!isActiving)}
+
+                />
+              </NavLink>
+            </li>
             <li className="nav-item px-xl-4 px-3">
               <NavLink
                 className={`nav-link px-0 ${classes.nav_link}`}
@@ -222,20 +236,6 @@ const Header = () => {
                 <span>Our work</span>
               </NavLink>
             </li>
-            <li className="nav-item px-xl-4 px-3">
-              <NavLink className="navbar-brand d-block-md" to={"/"}>
-                <img
-                  src={isStrickyFixed ? logoDark : logoLight}
-                  alt="macber_logo"
-                  loading="lazy"
-                  width="100%"
-                  style={{ width: "200px" }}
-                onClick={(e)=>setIsActiving(!isActiving)}
-
-                />
-              </NavLink>
-            </li>
-
             <li className="nav-item px-xl-4 px-3">
               <NavLink
                 className={`nav-link px-0 ${classes.nav_link}`}
